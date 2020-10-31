@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>One Geprek by Wahid</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet" />
+    <link href="fontawesome/css/all.min.css" rel="stylesheet" />
+    <link href="css/tooplate-chilling-cafe.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="tm-container">
+      <div class="tm-text-white tm-page-header-container">
+        <i class="fas fa-mug-hot fa-2x tm-page-icon"></i>
+        <h1 class="tm-page-header">One Geprek</h1>
+      </div>
+      <div class="tm-main-content">
+        <div id="tm-intro-img"></div>
+        <!-- Daftar Menu -->
+        <section class="tm-section">
+          <h2 class="tm-section-header">Daftar Menu</h2>
+          <div class="tm-responsive-table">
+            <table>
+              <tr class="tm-tr-header">
+                <th>&nbsp;</th>
+                <th></th>
+                <th></th>
+                <th>Harga</th>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Ayam Geprek Sambal Pedas</td>
+                <td></td>
+                <td></td>
+                <td>10K</td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Ayam Geprek Sambal Matah</td>
+                <td></td>
+                <td></td>
+                <td>12K</td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Ayam Geprek Sambal Hijau</td>
+                <td></td>
+                <td></td>
+                <td>10K</td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Ayam Geprek Sambal Jahe</td>
+                <td></td>
+                <td></td>
+                <td>12K</td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Nugget Geprek Sambal Pedas</td>
+                <td></td>
+                <td></td>
+                <td>12K</td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Nugget Geprek Sambal Hijau</td>
+                <td></td>
+                <td></td>
+                <td>12K</td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Nasi</td>
+                <td></td>
+                <td></td>
+                <td>2K</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+
+        <!-- Tea Menu -->
+        <section class="tm-section">
+          <h2 class="tm-section-header">Drink Menu</h2>
+          <div class="tm-responsive-table">
+            <table>
+              <tr class="tm-tr-header">
+                <th>&nbsp;</th>
+                <th></th>
+                <th></th>
+                <th>Harga</th>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Orange Juice</td>
+                <td></td>
+                <td></td>
+                <td>7K</td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Hot/Ice Tea</td>
+                <td></td>
+                <td></td>
+                <td>5K</td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Hot/Ice Milo</td>
+                <td></td>
+                <td></td>
+                <td>7K</td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Air Mineral</td>
+                <td></td>
+                <td></td>
+                <td>4K</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+        <hr />
+        <!-- About our cafe -->
+        <section class="tm-section tm-section-small">
+          <h2 class="tm-section-header">Tentang One Geprek</h2>
+          <p>
+            Rasa yang begitu mantap, kualitas ayam dan bahan yang sangat terjamin, rasa pedas terdiri dari level 1-10, harga bersahabat dan suasana tempat makan yang membuat kamu nyaman dan ketagihan
+          </p>
+          <p class="tm-mb-0">
+            Kami menyediakan jasa Delivery, kamu cukup dirumah saja biar kami yang antar
+          </p>
+        </section>
+        <hr />
+      </div>
+      <footer>
+        <p class="tm-text-white tm-footer-text">
+          One Geprek Halal Berkualitas 
+        </p>
+      </footer>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+      $(function() {
+        // Adjust intro image height based on width.
+        $(window).resize(function() {
+          var img = $("#tm-intro-img");
+          var imgWidth = img.width();
+
+          // 640x425 ratio
+          var imgHeight = (imgWidth * 425) / 640;
+
+          if (imgHeight < 300) {
+            imgHeight = 300;
+          }
+
+          img.css("min-height", imgHeight + "px");
+        });
+      });
+    </script>
+  </body>
+</html>
